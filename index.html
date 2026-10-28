@@ -1,0 +1,118 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#163e2d">
+  <meta name="description" content="You're invited to Leo's fifth birthday. An interactive jungle party invitation concept by InviLinks.">
+  <title>Leo’s Wild Five · A jungle birthday</title>
+  <link rel="icon" href="assets/leaf.svg" type="image/svg+xml">
+  <link rel="preload" href="assets/lilita.ttf" as="font" type="font/ttf" crossorigin>
+  <link rel="preload" href="assets/trail.jpg" as="image">
+  <link rel="stylesheet" href="style.css">
+  <script src="story.js" defer></script>
+  <script src="app.js" defer></script>
+</head>
+<body>
+<a class="skip" href="#details">Skip to party details</a>
+<svg class="svg-defs" xmlns="http://www.w3.org/2000/svg" aria-hidden="true"><defs>
+  <symbol id="leaf" viewBox="0 0 240 400"><path d="M120 390C110 300-20 280 13 175 26 108 67 28 122 5c55 37 112 114 111 190-1 98-102 123-113 195Z" fill="currentColor"/><path d="M120 380 122 32M120 300 35 225M120 240 27 163M120 177 57 101M122 111 89 55M121 325l81-73M121 262l97-73M122 198l83-70M122 132l48-64" fill="none" stroke="#b7cb78" stroke-opacity=".3" stroke-width="3"/></symbol>
+  <symbol id="palm" viewBox="0 0 600 620"><g fill="currentColor"><path d="M302 600C294 431 284 208 305 36c-2 204 18 414-3 564Z"/><path d="M305 35C204-2 96 4 10 90c108-27 220-20 295-55Zm-2 13C177 38 71 83 0 194c117-63 213-89 303-146Zm-3 32C148 87 51 168 15 298c109-109 192-156 285-218Zm0 42C143 172 70 253 65 401c72-111 143-190 235-279Zm-2 62C171 266 123 377 155 515c39-147 86-216 143-331Zm7-149C417 0 516 28 589 107 480 74 381 66 305 35Zm-1 24c138-3 229 59 290 175-115-78-202-119-290-175Zm0 37c156 31 239 128 270 256-97-105-172-187-270-256Zm0 51c135 62 195 165 191 304-62-112-112-209-191-304Zm2 67c99 98 131 210 95 348-30-131-53-235-95-348Z"/></g></symbol>
+  <symbol id="compass" viewBox="0 0 80 80"><circle cx="40" cy="40" r="34" fill="none" stroke="currentColor" stroke-width="1.5"/><path d="m52 22-7 23-23 13 10-25Z" fill="none" stroke="currentColor" stroke-width="2"/><path d="m52 22-12 18-8-7Z" fill="currentColor"/><path d="M40 1v10m0 58v10M1 40h10m58 0h10" stroke="currentColor"/></symbol>
+  <symbol id="bird" viewBox="0 0 100 100"><path d="M33 33C31 10 69 8 72 34c30 2 32 17 10 22H65c2 25-6 37-27 32L16 99l6-29C9 54 20 37 33 33Z" fill="currentColor"/><path d="M67 34c-9-2-15 8-10 21h25c20-5 19-18-15-21Z" fill="#f8ab31"/><circle cx="48" cy="31" r="3" fill="#123b28"/><path d="M32 48c-13 8-8 32 8 34 11-6 14-24 5-30" fill="#fcf1d0"/></symbol>
+  <symbol id="elephant" viewBox="0 0 120 100"><path d="M23 30C4 30 4 71 21 73v21h16V75h28v19h15V65c11 10 13 18 27 16 15-3 16-27 2-31v9c6 7 0 13-8 10-8-5-7-20-13-34-12-25-48-24-65-5Z" fill="currentColor"/><ellipse cx="67" cy="42" rx="19" ry="25" fill="#fbdfaa"/><circle cx="90" cy="34" r="3" fill="#153d2c"/><path d="M17 40 5 28" stroke="currentColor" stroke-width="5" stroke-linecap="round"/></symbol>
+  <symbol id="butterfly" viewBox="0 0 100 100"><path d="M49 51C-8-15-19 68 41 66-10 98 59 112 49 51Zm2 0C108-15 119 68 59 66c51 32-18 46-8-15Z" fill="currentColor"/><path d="M50 39v39M50 43 39 28m11 15 11-15" stroke="#143d2b" stroke-width="5" stroke-linecap="round"/></symbol>
+</defs></svg>
+
+<header class="site-header">
+  <a class="brand" href="#top" aria-label="Leo's Wild Five, back to top"><svg><use href="#compass"/></svg><span>LEO’S<br><b>WILD FIVE</b></span></a>
+  <nav aria-label="Main navigation"><a href="#details">The party</a><a href="#expedition">The adventure</a><a class="nav-rsvp" href="#rsvp">Count us in <span>↗</span></a></nav>
+</header>
+
+<main>
+  <section class="journey" id="top" aria-label="Welcome to Leo's jungle party">
+    <div class="jungle-stage">
+      <div class="stage-photo"><img src="assets/trail.jpg" alt="Dense tropical rainforest with towering trees" fetchpriority="high"></div>
+      <div class="canopy-shade"></div><div class="sunbeam"></div>
+      <div class="leaf-layer leaves-left" aria-hidden="true"><svg class="palm palm-a"><use href="#palm"/></svg><svg class="big-leaf leaf-a"><use href="#leaf"/></svg><svg class="big-leaf leaf-b"><use href="#leaf"/></svg></div>
+      <div class="leaf-layer leaves-right" aria-hidden="true"><svg class="palm palm-b"><use href="#palm"/></svg><svg class="big-leaf leaf-c"><use href="#leaf"/></svg><svg class="big-leaf leaf-d"><use href="#leaf"/></svg></div>
+      <div class="motes" aria-hidden="true"></div>
+      <div class="hero-type">
+        <span class="eyebrow hero-eyebrow">Calling all little explorers</span>
+        <h1><span class="leo">Leo’s</span><span class="wild">WILD</span><span class="five">FIVE<span class="asterisk">✳</span></span></h1>
+        <div class="hero-caption"><span>A jungle birthday party</span><span>20.06.2027 · 2 PM</span></div>
+        <a class="enter-button" href="#jungle-pass">Enter the jungle <span>↓</span></a>
+      </div>
+      <div class="journey-note" aria-hidden="true"><span>FOLLOW THE TRAIL</span><i></i><span class="journey-percent">00%</span></div>
+      <div class="hero-stamp" aria-hidden="true"><span>EXPLORER</span><b>05</b><span>LEVEL UNLOCKED</span></div>
+      <div class="pass-anchor" id="jungle-pass" aria-hidden="true"></div>
+      <article class="explorer-pass" aria-label="Leo's birthday invitation">
+        <div class="pass-top"><svg><use href="#compass"/></svg><span>OFFICIAL PARTY INVITATION</span><span>NO. 005</span></div>
+        <div class="pass-main"><div class="pass-copy"><p class="eyebrow">One birthday. A whole jungle.</p><h2>Our little<br>explorer<br>is turning <em>five.</em></h2><p>Join Leo for an afternoon of<br>games, cake & jungle discoveries.</p><a href="#details" class="text-link">Your expedition details <span>↓</span></a></div><div class="pass-image"><img src="assets/elephant.jpg" alt="An elephant lifting its trunk"><span class="round-stamp">LEO’S JUNGLE CLUB<br><b>20 JUN</b><br>EST. 2022</span></div></div>
+        <div class="pass-bottom"><b>ADMIT ONE EXPLORER + THEIR GROWN-UPS</b><span>SUNDAY · 20 JUNE 2027</span><span class="barcode" aria-hidden="true"></span></div>
+      </article>
+      <button class="creature creature-bird" data-animal="toucan" aria-label="Spot the hidden toucan"><svg><use href="#bird"/></svg><span>Who’s there?</span></button>
+    </div>
+  </section>
+
+  <section class="details paper" id="details">
+    <div class="section-label"><span>01 / BASE CAMP</span><svg><use href="#compass"/></svg><span>EXPEDITION BRIEFING</span></div>
+    <div class="details-heading reveal"><p class="eyebrow">Pack your curiosity.</p><h2>The jungle’s ready.<br><em>Are you?</em></h2></div>
+    <div class="logistics reveal">
+      <div><span class="tiny-label">THE DAY</span><h3>Sunday,<br>20 June</h3><p>2027 · Save the date</p><a href="leo-wild-five.ics" download class="text-link">Add to calendar ↗</a></div>
+      <div><span class="tiny-label">THE TIME</span><h3>2:00—<br>5:00 PM</h3><p>Philippine Standard Time</p><span class="small-note">Come ready for the first game.</span></div>
+      <div><span class="tiny-label">THE HIDEOUT</span><h3>The Jungle<br>Clubhouse</h3><p>Sample venue · Angeles City</p><button class="text-link" id="venue-info">View venue note ↗</button></div>
+    </div>
+    <div class="packing-note reveal"><span class="packing-icon" aria-hidden="true">✳</span><p><strong>Explorer dress code</strong><br>Earth tones, animal prints & shoes made for play.<br class="desktop-only"> Grown-ups, you’re part of the expedition too.</p><div class="swatches" aria-label="Suggested colors: forest green, khaki, warm orange, and cream"><i></i><i></i><i></i><i></i></div></div>
+    <div class="countdown reveal" aria-label="Countdown to the party"><span>ADVENTURE BEGINS IN</span><div><b id="days">000</b><small>DAYS</small><i>:</i><b id="hours">00</b><small>HOURS</small><i>:</i><b id="minutes">00</b><small>MINUTES</small></div></div>
+  </section>
+
+  <section class="crew" id="expedition" aria-label="Jungle expedition">
+    <div class="crew-sticky">
+      <img class="crew-bg" src="assets/toucan.jpg" alt="A toucan with a bright yellow beak against a dark background" loading="lazy">
+      <div class="crew-overlay"></div>
+      <div class="crew-title"><span class="eyebrow">02 / INTO THE WILD</span><h2>Meet your<br><em>jungle crew.</em></h2><p>Keep your eyes open.<br>Three little creatures are hiding on this invitation.</p><button class="outline-button" data-open-journal>Open explorer journal <span>↗</span></button></div>
+      <div class="field-note"><span>YOUR SIDE QUEST</span><p>Find three creatures.<br>Collect three stamps.</p><span>OPEN YOUR EXPLORER JOURNAL.</span></div>
+      <span class="crew-word" aria-hidden="true">EXPLORE</span>
+      <button class="creature creature-butterfly" data-animal="butterfly" aria-label="Spot the hidden butterfly"><svg><use href="#butterfly"/></svg><span>Catch a glimpse</span></button>
+    </div>
+  </section>
+
+  <section class="itinerary paper" id="plan">
+    <div class="section-label"><span>03 / THE PLAN</span><span>THREE HOURS OF WILD</span></div>
+    <div class="itinerary-intro reveal"><h2>A little wild.<br><em>A lot of fun.</em></h2><p>Here’s what’s on the trail.<br>Snacks and happy little breaks included.</p></div>
+    <div class="timeline">
+      <article class="trail-stop reveal"><span class="stop-number">01</span><span class="stop-time">2:00 PM</span><div><h3>Welcome to base camp</h3><p>Pick up your explorer badge, meet the crew, and settle in.</p></div><svg class="stop-icon"><use href="#compass"/></svg></article>
+      <article class="trail-stop reveal"><span class="stop-number">02</span><span class="stop-time">2:30 PM</span><div><h3>Let the adventure begin</h3><p>Jungle games, a treasure trail, and a few little surprises.</p></div><span class="stop-icon type-icon" aria-hidden="true">✳</span></article>
+      <article class="trail-stop reveal"><span class="stop-number">03</span><span class="stop-time">4:00 PM</span><div><h3>Cake. Candles. Big wishes.</h3><p>Sing for the birthday explorer, then make room for cake.</p></div><span class="stop-icon cake-icon" aria-hidden="true">⑤</span></article>
+    </div>
+    <div class="grownups reveal"><b>A note for the grown-ups</b><p>Please stay with your little explorers. Let us know about food allergies when you RSVP. Your company is the best birthday treat; gifts are optional.</p></div>
+  </section>
+
+  <section class="canopy-transition" aria-label="Continue to RSVP"><div class="canopy-inner"><img src="assets/canopy.jpg" alt="Lush green rainforest canopy" loading="lazy"><div class="canopy-tint"></div><p>Next stop.<br><span>The guest list.</span></p><svg class="transition-leaf tl1" aria-hidden="true"><use href="#leaf"/></svg><svg class="transition-leaf tl2" aria-hidden="true"><use href="#leaf"/></svg><button class="creature creature-elephant" data-animal="elephant" aria-label="Spot the hidden elephant"><svg><use href="#elephant"/></svg><span>A little discovery</span></button></div></section>
+
+  <section class="rsvp paper" id="rsvp">
+    <div class="section-label"><span>04 / JOIN THE EXPEDITION</span><span>REPLY BY 06 JUNE 2027</span></div>
+    <div class="rsvp-grid">
+      <div class="rsvp-intro reveal"><div class="green-stamp"><svg><use href="#compass"/></svg><span>LEO’S JUNGLE CLUB</span></div><h2>Coming<br><em>along?</em></h2><p>Tell us who’s joining the adventure.<br>We’ll save you a place at base camp.</p><p class="demo-note">Invitation concept · RSVP preview<br>This sample saves your reply on this device only.<br>No response is sent to an event host.</p></div>
+      <form id="rsvp-form" class="rsvp-form reveal">
+        <label for="guest-name">Your name <span>*</span></label><input id="guest-name" name="name" placeholder="Name of parent or guardian" required maxlength="100" autocomplete="name">
+        <fieldset><legend>Will your crew be joining? <span>*</span></legend><div class="attendance-options"><label><input type="radio" name="attendance" value="yes" checked><span>Yes, we’re in! <b>↗</b></span></label><label><input type="radio" name="attendance" value="no"><span>Can’t make it <b>↘</b></span></label></div></fieldset>
+        <div class="guest-counts"><label>Little explorers<select name="children" aria-label="Number of children"><option value="1">1 child</option><option value="2">2 children</option><option value="3">3 children</option><option value="4">4 children</option><option value="0">Adults only</option></select></label><label>Grown-ups<select name="adults" aria-label="Number of adults"><option value="1">1 adult</option><option value="2">2 adults</option><option value="3">3 adults</option><option value="4">4 adults</option></select></label></div>
+        <label for="guest-notes">Anything we should know? <span class="optional">Optional</span></label><textarea id="guest-notes" name="notes" placeholder="Food allergies, accessibility needs, or a note for Leo…" rows="3" maxlength="500"></textarea>
+        <button type="submit" class="submit-button">Save my sample RSVP <span>↗</span></button><p id="form-status" role="status" aria-live="polite"></p><button type="button" id="reset-rsvp" class="text-link" hidden>Clear my sample reply</button>
+      </form>
+    </div>
+  </section>
+  <section class="closing"><div class="closing-leaves" aria-hidden="true"><svg><use href="#palm"/></svg><svg><use href="#palm"/></svg></div><span class="eyebrow">Leo’s fifth birthday</span><p>See you<br><em>in the jungle.</em></p><span>SUNDAY · 20 JUNE 2027</span><a href="#top" class="back-top">Back to the treetops ↑</a></section>
+</main>
+
+<footer><a href="#top" class="footer-brand">Invi<span>Links</span></a><p>A jungle party invitation concept.<br>Names, venue and event details are illustrative.</p><button id="credits-open" class="text-link">Music, photos & licenses ↗</button></footer>
+<button class="journal-toggle" data-open-journal aria-label="Open explorer journal, 0 of 3 creatures found"><svg><use href="#compass"/></svg><span>EXPLORER JOURNAL <b id="found-count">0/3</b></span></button>
+<div class="toast" role="status" aria-live="polite"></div>
+<audio id="jungle-music" src="assets/jungle-music.mp3" preload="metadata" loop></audio>
+<button class="sound-toggle" id="music-toggle" aria-label="Play jungle music" aria-pressed="false"><span class="sound-icon" aria-hidden="true">♫</span><span class="sound-label">Jungle music</span><span class="sound-state">OFF</span></button>
+
+<dialog id="journal"><button class="dialog-close" aria-label="Close explorer journal">×</button><span class="eyebrow">YOUR LITTLE EXPEDITION</span><h2>Explorer journal</h2><p>Find three creatures hiding on this page.<br>Tap each one to collect its stamp.</p><div class="stamp-grid"><div data-stamp="toucan"><svg><use href="#bird"/></svg><b>Toucan</b><small>Near the jungle entrance</small></div><div data-stamp="butterfly"><svg><use href="#butterfly"/></svg><b>Butterfly</b><small>With the jungle crew</small></div><div data-stamp="elephant"><svg><use href="#elephant"/></svg><b>Elephant</b><small>Before the guest list</small></div></div><p class="journal-message">Your adventure is just getting started.</p><button id="reset-journal" class="text-link">Start the hunt again ↻</button></dialog>
+<dialog id="credits"><button class="dialog-close" aria-label="Close credits">×</button><span class="eyebrow">PHOTO & MUSIC CREDITS</span><h2>Wild, with credit.</h2><p><strong>Music: “Chee Zee Jungle” — Kevin MacLeod</strong><br><a href="https://incompetech.com/music/royalty-free/index.html?Search=Search&amp;isrc=USUAN1100684" target="_blank" rel="noopener">incompetech.com</a> · <a href="https://creativecommons.org/licenses/by/4.0/" target="_blank" rel="noopener">Creative Commons Attribution 4.0</a>.<br>Compressed for website playback. The full track plays on repeat at a gentle volume.</p><p>These photographs are available free under the <a href="https://unsplash.com/license" target="_blank" rel="noopener">Unsplash License</a>.</p><ul><li>Rainforest trail — <a href="https://unsplash.com/photos/CO7YiE75XE4" target="_blank" rel="noopener">Darien Attridge</a></li><li>Green canopy — <a href="https://unsplash.com/photos/EPO7J1Xrwh8" target="_blank" rel="noopener">Aleksandr Galichkin</a></li><li>Toucan — <a href="https://unsplash.com/photos/xGTUGeCQDhU" target="_blank" rel="noopener">Lambert Huang</a></li><li>Elephant — <a href="https://unsplash.com/photos/rIwnbVQ8XVM" target="_blank" rel="noopener">Ani Adigyozalyan</a></li></ul><p>Type: Lilita One & DM Sans, licensed under the SIL Open Font License. Leaf shapes and little creature icons are original vector artwork.</p></dialog>
+<dialog id="venue-dialog"><button class="dialog-close" aria-label="Close venue note">×</button><span class="eyebrow">SAMPLE INVITATION</span><h2>The Jungle Clubhouse</h2><p>This is an illustrative venue in Angeles City, Pampanga. For a real invitation, this area will show the host’s confirmed address and a map link.</p><p>Sunday, 20 June 2027<br>2:00–5:00 PM · Philippine Standard Time</p></dialog>
+</body></html>

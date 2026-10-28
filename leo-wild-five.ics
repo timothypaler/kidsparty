@@ -1,0 +1,16 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//InviLinks//Leo Wild Five Sample//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:leo-wild-five-sample-20270620@invilinks.example
+DTSTAMP:20261027T160000Z
+DTSTART:20270620T060000Z
+DTEND:20270620T090000Z
+SUMMARY:Leo's Wild Five - Sample birthday invitation
+LOCATION:The Jungle Clubhouse - illustrative venue in Angeles City
+DESCRIPTION:InviLinks invitation concept only. Event and venue details are illustrative. 2-5 PM Philippine Standard Time.
+STATUS:TENTATIVE
+END:VEVENT
+END:VCALENDAR
